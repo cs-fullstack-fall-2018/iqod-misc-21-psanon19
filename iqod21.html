@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    var stringCheck = prompt("What is your fav quote?");
+
+    function iqod(string)
+    {
+        var blankArray = [];
+        for (var i = 0; i<stringCheck.length; i++)
+        {
+
+            if (stringCheck[i]!==" ")
+            {
+                blankArray+=[stringCheck[i]];
+            }
+            else
+            {
+                blankArray+=","
+            }
+
+        }
+        return blankArray
+    }
+
+    document.write(iqod(stringCheck));
+    console.log(iqod(stringCheck));
+</script>
+
+</body>
+</html>
